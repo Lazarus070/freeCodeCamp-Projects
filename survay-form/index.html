@@ -1,0 +1,41 @@
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>  
+<h1 id="title">Video Game Feedback</h1>
+<p id="description">Feedback on Call of duty mobile gameplay</p>
+<form id="survey-form">
+
+ <label id="name-label" for="name">Name:</label>
+ <input id="name" type="text" placeholder="Enter your name" required>
+
+ <label id="email-label" for="email">Email:</label>
+ <input id="email" type="email" placeholder="Enter your email" required>
+
+ <label id="number-label" for="number">Age</label>
+ <input id="number" type="number" min="1" max="100" placeholder="Age">
+
+ <label for="dropdown">Favorite weapon:</label>
+ <select id="dropdown">
+  <option value="sniper">Sniper</option>
+  <option value="shotgun">shotgun</option>
+ </select> 
+
+<p>would you recommend this game?</p>
+<label>
+  <input type="radio" name="recommend" value="yes">Yes</label>
+<label>
+  <input type="radio" name="recommend" value="no">No</label>
+
+  <p>what features do you like?</p>
+  <label>
+    <input type="checkbox" value="graphics">Graphics</label>
+  <label>
+    <input type="checkbox" value="weapon selection">weapon selection</label>
+  <label>
+    <input type="checkbox" value="maps">Maps</label>
+
+    <p>Any additional comments or suggestions</p>
+    <textarea placeholder="Enter your comments here..."></textarea>
+
+      <button id="submit" value="submit" type="submit">Submit</button>
+</form>
