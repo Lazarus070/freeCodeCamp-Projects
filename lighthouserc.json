@@ -3,7 +3,7 @@
     "collect": {
       "staticDistDir": "./",
       "url": [
-        "http://localhost/index.html"
+        "http://localhost/tribute-page/index.html"
       ],
       "numberOfRuns": 1
     },
