@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Call of Duty: Mobile — Gameplay &amp; Weapon Balance Survey</title>
+  <meta name="description" content="Player experience and combat telemetry research survey for Call of Duty: Mobile, built with semantic HTML5 and zero-JavaScript responsive CSS3.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Call of Duty: Mobile — Gameplay &amp; Weapon Balance Survey">
+  <meta property="og:description" content="Evaluate seasonal weapon tuning, matchmaking latency, and core multiplayer maps in an accessible, zero-JavaScript research survey.">
+  <meta property="og:image" content="https://freecodecamp-projects.vercel.app/survey-form/og-preview.png">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f172a'/%3E%3Cpath d='M9 16.5l4.5 4.5L23 11.5' fill='none' stroke='%2338bdf8' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#survey-form">Skip to survey form</a>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Portfolio navigation">
+        <a class="breadcrumb-link" href="../index.html">&larr; freeCodeCamp-Projects</a>
+        <span class="breadcrumb-tag">02 / survey-form</span>
+      </nav>
+
+      <p class="eyebrow">Player Experience &amp; Combat Telemetry</p>
+      <h1 id="title">Call of Duty: Mobile — Gameplay &amp; Weapon Balance Survey</h1>
+      <p id="description">Share your match telemetry, primary loadout preferences, and feature feedback to help guide seasonal balance updates.</p>
+
+      <details class="disclosure">
+        <summary>How your telemetry feedback is used</summary>
+        <p>Responses are aggregated anonymously to benchmark weapon class pick-rates, frame-rate stability across mobile devices, and map rotation quality.</p>
+      </details>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+      <section class="survey-card" aria-labelledby="survey-section-title">
+        <div class="card-header">
+          <h2 id="survey-section-title">Season Combat &amp; UX Questionnaire</h2>
+          <p class="required-legend">Fields marked with <span class="required-mark" aria-hidden="true">*</span> are required.</p>
+        </div>
+
+        <form id="survey-form" action="#survey-form" method="get">
+          <fieldset class="form-fieldset">
+            <legend class="fieldset-legend">1. Player Profile</legend>
+
+            <div class="field-grid">
+              <div class="field-group field-group--full">
+                <label id="name-label" for="name">
+                  Player Name or Callsign <span class="required-mark" aria-hidden="true">*</span>
+                </label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  placeholder="Enter your name or in-game callsign"
+                  autocomplete="name"
+                  required
+                >
+              </div>
+
+              <div class="field-group">
+                <label id="email-label" for="email">
+                  Email Address <span class="required-mark" aria-hidden="true">*</span>
+                </label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="player@example.com"
+                  autocomplete="email"
+                  required
+                >
+              </div>
+
+              <div class="field-group">
+                <label id="number-label" for="number">
+                  Age <span class="optional-label">(Optional, 1–100)</span>
+                </label>
+                <input
+                  id="number"
+                  name="age"
+                  type="number"
+                  min="1"
+                  max="100"
+                  inputmode="numeric"
+                  placeholder="Age"
+                >
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-fieldset">
+            <legend class="fieldset-legend">2. Primary Loadout</legend>
+
+            <div class="field-group field-group--full">
+              <label id="dropdown-label" for="dropdown">Favorite Weapon Class</label>
+              <select id="dropdown" name="favorite-weapon">
+                <option value="" disabled selected>Select your primary weapon class…</option>
+                <option value="sniper">Sniper Rifle (Long-Range Precision)</option>
+                <option value="shotgun">Shotgun (Close-Quarters Breach)</option>
+                <option value="assault-rifle">Assault Rifle (Mid-Range Versatility)</option>
+                <option value="smg">Submachine Gun (High-Mobility Rush)</option>
+                <option value="lmg">Light Machine Gun (Suppressive Anchor)</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-fieldset">
+            <legend class="fieldset-legend">3. Would you recommend Call of Duty: Mobile to a friend?</legend>
+
+            <div class="choice-list">
+              <div class="choice-item">
+                <input id="recommend-yes" type="radio" name="recommend" value="yes">
+                <label for="recommend-yes">Yes — gunplay and pacing feel balanced</label>
+              </div>
+
+              <div class="choice-item">
+                <input id="recommend-maybe" type="radio" name="recommend" value="maybe">
+                <label for="recommend-maybe">Maybe — depends on seasonal weapon tuning</label>
+              </div>
+
+              <div class="choice-item">
+                <input id="recommend-no" type="radio" name="recommend" value="no">
+                <label for="recommend-no">No — matchmaking or stability needs work</label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-fieldset">
+            <legend class="fieldset-legend">
+              4. Which features do you enjoy most? <span class="optional-label">(Select all that apply)</span>
+            </legend>
+
+            <div class="choice-list">
+              <div class="choice-item">
+                <input id="feature-graphics" type="checkbox" name="features" value="graphics">
+                <label for="feature-graphics">Graphics &amp; Frame-Rate Performance</label>
+              </div>
+
+              <div class="choice-item">
+                <input id="feature-weapons" type="checkbox" name="features" value="weapon selection">
+                <label for="feature-weapons">Weapon Selection &amp; Gunsmith Customization</label>
+              </div>
+
+              <div class="choice-item">
+                <input id="feature-maps" type="checkbox" name="features" value="maps">
+                <label for="feature-maps">Multiplayer Maps &amp; Lane Design</label>
+              </div>
+
+              <div class="choice-item">
+                <input id="feature-audio" type="checkbox" name="features" value="spatial-audio">
+                <label for="feature-audio">Directional Footstep &amp; Spatial Audio</label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-fieldset">
+            <legend class="fieldset-legend">5. Balance &amp; Gameplay Suggestions</legend>
+
+            <div class="field-group field-group--full">
+              <label for="comments">Additional Comments or Patch Suggestions</label>
+              <textarea
+                id="comments"
+                name="comments"
+                rows="4"
+                placeholder="Enter your comments on weapon recoil, map rotations, or HUD controls..."
+              ></textarea>
+            </div>
+          </fieldset>
+
+          <div class="form-footer">
+            <button id="submit" type="submit">Submit Feedback</button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Built with semantic HTML5 &amp; zero-JavaScript CSS3 &bull; <code>Lazarus070/freeCodeCamp-Projects</code></p>
+    </div>
+  </footer>
+</body>
+</html>
