@@ -1,11 +1,13 @@
 {
   "ci": {
     "collect": {
-      "staticDistDir": "./",
+      "staticDistDir": ".",
       "url": [
         "http://localhost/tribute-page/index.html",
-        "http://localhost/survey-form/index.html"
-      ]
+        "http://localhost/survey-form/index.html",
+        "http://localhost/cod-landing-page/index.html"
+      ],
+      "numberOfRuns": 3
     },
     "assert": {
       "assertions": {

@@ -2,67 +2,295 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Call Of Duty: Warzone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Call of Duty: Warzone — Tactical Operations &amp; Loadout Hub</title>
+  <meta
+    name="description"
+    content="Deploy into Call of Duty: Warzone. Explore 150-player battle royale mechanics, Gunsmith 3.0 loadouts, operator deployment tiers, and live tactical intel."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Call of Duty: Warzone — Tactical Operations &amp; Loadout Hub" />
+  <meta
+    property="og:description"
+    content="Zero-JavaScript, high-contrast tactical product showcase featuring Gunsmith 3.0 specs, deployment editions, and accessible intel dispatch."
+  />
+  <meta
+    property="og:image"
+    content="https://free-code-camp-projects.vercel.app/cod-landing-page/og-preview.png"
+  />
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='6'%20fill='%230b0e11'/%3E%3Ccircle%20cx='16'%20cy='16'%20r='10'%20fill='none'%20stroke='%23f0b90b'%20stroke-width='2.5'/%3E%3Cpath%20d='M16%203v5M16%2024v5M3%2016h5M24%2016h5'%20stroke='%23f0b90b'%20stroke-width='2.5'%20stroke-linecap='round'/%3E%3Ccircle%20cx='16'%20cy='16'%20r='2.5'%20fill='%23f3f6f9'/%3E%3C/svg%3E"
+  />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  
-<header id="header">
-  <img id="header-img" src="https://upload.wikimedia.org/wikimedia/commons/2/20/Call_of_Duty_logo.svg" alt="Call of Duty Logo" />
-  <nav id="nav-bar">
-    <a class="nav-link" href="#features">Features</a>
-    <a class="nav-link" href="#how-it-works">Trailer</a>
-    <a class="nav-link" href="#pricing">Deploy</a>
-  </nav>
-</header>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-<main>
-  <div class="hero">
-    <h1>CALL OF DUTY: WARZONE</h1>
-    <p>Join the battle. Drop into high-stakes warzones and outlast the competition.</p>
-  </div>
+  <header id="header" class="site-header">
+    <div class="header-inner">
+      <a class="brand-link" href="#top" aria-label="Call of Duty: Warzone Home">
+        <img
+          id="header-img"
+          src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20210%2040'%20width='210'%20height='40'%3E%3Crect%20x='1'%20y='4'%20width='32'%20height='32'%20rx='6'%20fill='%2313181f'%20stroke='%23f0b90b'%20stroke-width='2'/%3E%3Ccircle%20cx='17'%20cy='20'%20r='8'%20fill='none'%20stroke='%23f0b90b'%20stroke-width='2'/%3E%3Cpath%20d='M17%209v4M17%2027v4M6%2020h4M24%2020h4'%20stroke='%23f0b90b'%20stroke-width='2'%20stroke-linecap='round'/%3E%3Ccircle%20cx='17'%20cy='20'%20r='2'%20fill='%23f3f6f9'/%3E%3Ctext%20x='44'%20y='18'%20fill='%23f0b90b'%20font-family='system-ui,sans-serif'%20font-size='10'%20font-weight='700'%20letter-spacing='2'%3ETF-141%20//%20OPS%3C/text%3E%3Ctext%20x='44'%20y='33'%20fill='%23f3f6f9'%20font-family='system-ui,sans-serif'%20font-size='16'%20font-weight='800'%20letter-spacing='1.5'%3EWARZONE%3C/text%3E%3C/svg%3E"
+          alt="Task Force 141 Warzone Tactical Emblem"
+          width="210"
+          height="40"
+        />
+      </a>
 
-<section id="features">
-  <h2>Game Features</h2>
-  <div class="features-grid">
-  <div class="feature-card">
-    <h3>Massive Battle Royale</h3>
-    <p>Drop in with up to 150 players in intense combat across vast tactical maps.</p>
-  </div>
-  <div class="feature-card">
-    <h3>Custom Loadouts</h3>
-    <p>Modify and upgrade your arsenal using the Gunsmith to match your combat style.</p>
-  </div>
-  <div class="feature-card">
-    <h3>Cross-Platform Player</h3>
-    <p>Squad up with friends across PC, Playstation, and Xbox seamlessly.</p>
-  </div>
-</div>
-</section>
+      <nav id="nav-bar" class="nav-bar" aria-label="Primary Navigation">
+        <a class="nav-link" href="#features">Arsenal</a>
+        <a class="nav-link" href="#how-it-works">Field Intel</a>
+        <a class="nav-link" href="#pricing">Deploy Tiers</a>
+        <a class="nav-link" href="#intel-briefing">Comms</a>
+      </nav>
+    </div>
+  </header>
 
-<section id="how-it-works">
-  <h2>Official Trailers</h2>
-  <div class="video-container">
-    <iframe id="video" src="https://www.youtube-nocookie.com/embed//0E44VMtfX3Q" title="Call of Duty Trailer" allowfullscreen></iframe>
-  </div>    
-</section>
+  <main id="main-content">
+    <section id="top" class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">SEASON 06 // TACTICAL DEPLOYMENT LIVE</p>
+          <h1 id="hero-title">CALL OF DUTY: WARZONE</h1>
+          <p class="hero-lead">
+            Drop into high-stakes combat zones with 150 operators, precision Gunsmith 3.0 ballistics,
+            and seamless cross-platform squad coordination.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#pricing">Select Deployment Tier</a>
+            <a class="btn btn-secondary" href="#how-it-works">Watch HUD Briefing</a>
+          </div>
+        </div>
 
-<section id="pricing">
-  <h2>Join The Intel Briefing</h2>
-  <p>Subscribe to recieve exclusive in-game rewards, beta access, and battle pass updates.</p>
+        <aside class="telemetry-panel" aria-label="Live Server &amp; Combat Telemetry">
+          <div class="telemetry-header">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span class="telemetry-label">UPLINK STATUS: OPERATIONAL</span>
+          </div>
+          <dl class="telemetry-stats">
+            <div class="stat-item">
+              <dt>Max Lobby Capacity</dt>
+              <dd>150 Operators</dd>
+            </div>
+            <div class="stat-item">
+              <dt>Server Tick Rate</dt>
+              <dd>60 Hz Dedicated</dd>
+            </div>
+            <div class="stat-item">
+              <dt>Cross-Progression</dt>
+              <dd>PC / PS5 / Xbox</dd>
+            </div>
+            <div class="stat-item">
+              <dt>Weapon Platforms</dt>
+              <dd>110+ Blueprints</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </section>
 
-<form id="form" action="https://Www.freecodecamp.com/email-submit">
- <input 
-  id="email"
-  placeholder="Enter your military email address"
-  type="email"
-  name="email"
-  required />
-      <input id="submit" type="submit" value="JOIN THE SQUAD" />
-    </form>
-  </section>
-</main>
+    <section id="features" class="section" aria-labelledby="features-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">CORE COMBAT SYSTEMS</p>
+          <h2 id="features-title">Engineered For Tactical Superiority</h2>
+        </div>
 
+        <div class="features-grid">
+          <article class="feature-card">
+            <span class="card-index" aria-hidden="true">01 // BR-150</span>
+            <h3>Massive Battle Royale</h3>
+            <p>
+              Infiltrate sprawling urban and coastal sectors with up to 150 players, dynamic gas-circle
+              rotations, and high-value contract objectives.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="card-index" aria-hidden="true">02 // GUNSMITH</span>
+            <h3>Custom Loadouts</h3>
+            <p>
+              Calibrate barrel harmonics, recoil stabilization, and optic magnification inside Gunsmith 3.0
+              to match close-quarters or long-range engagements.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="card-index" aria-hidden="true">03 // NETCODE</span>
+            <h3>Cross-Platform Squads</h3>
+            <p>
+              Party up across PC, PlayStation, and Xbox with unified Activision ID progression, spatial
+              proximity comms, and input-based matchmaking.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="section section-alt" aria-labelledby="briefing-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">SATELLITE RECON // SECTOR 07</p>
+          <h2 id="briefing-title">Official Tactical HUD Briefing</h2>
+          <p class="section-sub">
+            Review drop-zone insertion protocols, Gulag redeployment rules, and buy-station economy telemetry.
+          </p>
+        </div>
+
+        <div class="video-shell">
+          <video
+            id="video"
+            controls
+            preload="none"
+            width="960"
+            height="540"
+            src="data:video/mp4;base64,AAAAIGZ0eXBpc29tAAACAGlzb21pc28yYXZjMW1wNDEAAAAIZnJlZQAAAAhmcmVl"
+            poster="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20960%20540'%20width='960'%20height='540'%3E%3Crect%20width='960'%20height='540'%20fill='%230b0e11'/%3E%3Cpath%20d='M0%2090h960M0%20180h960M0%20270h960M0%20360h960M0%20450h960M160%200v540M320%200v540M480%200v540M640%200v540M800%200v540'%20stroke='%231b222c'%20stroke-width='1.5'/%3E%3Cpath%20d='M48%2096V48h48M912%2096V48h-48M48%20444v48h48M912%20444v48h-48'%20fill='none'%20stroke='%23f0b90b'%20stroke-width='3'/%3E%3Ccircle%20cx='480'%20cy='250'%20r='54'%20fill='%2313181f'%20stroke='%23f0b90b'%20stroke-width='3'/%3E%3Cpolygon%20points='468,230%20504,250%20468,270'%20fill='%23f0b90b'/%3E%3Ctext%20x='480'%20y='342'%20text-anchor='middle'%20fill='%23f3f6f9'%20font-family='system-ui,sans-serif'%20font-size='22'%20font-weight='700'%20letter-spacing='3'%3ETACTICAL%20HUD%20BRIEFING%20//%2002:14%3C/text%3E%3Ctext%20x='480'%20y='374'%20text-anchor='middle'%20fill='%23c2cbd6'%20font-family='system-ui,sans-serif'%20font-size='15'%20letter-spacing='2'%3ESECTOR%2007%20INSERTION%20AND%20LOADOUT%20TELEMETRY%3C/text%3E%3C/svg%3E"
+            aria-label="Call of Duty: Warzone Tactical Operations HUD Briefing"
+          >
+            Your browser does not support embedded HTML5 video. Read the full tactical briefing transcript below.
+          </video>
+
+          <details class="briefing-transcript">
+            <summary>Read Full Tactical Briefing Transcript &amp; Key Timestamps</summary>
+            <div class="transcript-body">
+              <p>
+                <strong>[00:00 — Insertion Phase]:</strong> Squads deploy from C-130 transport aircraft across
+                12 named sectors. Ping high-tier supply caches early to secure armor plates and primary weapons.
+              </p>
+              <p>
+                <strong>[00:52 — Buy Station Economy]:</strong> Pool squad cash to call in custom Loadout Drop
+                markers, UAV sweeps, and squadmate redeployments before circle collapse accelerates.
+              </p>
+              <p>
+                <strong>[01:40 — Gulag &amp; Final Circle]:</strong> Eliminated operators enter a 1v1 Gulag duel
+                for immediate redeployment. In Phase 6, secure high-ground cover and manage gas-mask durability.
+              </p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="section" aria-labelledby="pricing-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">OPERATOR ACCESS PACKAGES</p>
+          <h2 id="pricing-title">Deployment &amp; Loadout Tiers</h2>
+          <p class="section-sub">
+            Choose your entry configuration. All editions include full Warzone Battle Royale and Resurgence playlists.
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="tier-card">
+            <div class="tier-top">
+              <span class="tier-badge">STANDARD ACCESS</span>
+              <h3>F2P Recon Edition</h3>
+              <p class="tier-price">$0 <span class="price-note">/ Free Forever</span></p>
+            </div>
+            <ul class="tier-features">
+              <li>Full Battle Royale &amp; Resurgence Map Rotation</li>
+              <li>Complete Gunsmith 3.0 Attachment Progression</li>
+              <li>Cross-Platform Party &amp; Proximity Voice Chat</li>
+              <li>20 Free Seasonal Battle Pass Tier Unlocks</li>
+            </ul>
+            <a class="btn btn-secondary btn-full" href="#intel-briefing">Deploy Free</a>
+          </article>
+
+          <article class="tier-card tier-featured">
+            <div class="tier-top">
+              <span class="tier-badge badge-gold">MOST DEPLOYED</span>
+              <h3>Vault Tactical Edition</h3>
+              <p class="tier-price">$69.99 <span class="price-note">/ One-Time</span></p>
+            </div>
+            <ul class="tier-features">
+              <li>Everything in F2P Recon Edition</li>
+              <li>Task Force 141 Reactive Operator Pack (4 Skins)</li>
+              <li>Fate Weapon Vault Mastercraft Blueprints</li>
+              <li>Season Battle Pass + 1,100 COD Points</li>
+            </ul>
+            <a class="btn btn-primary btn-full" href="#intel-briefing">Lock Vault Loadout</a>
+          </article>
+
+          <article class="tier-card">
+            <div class="tier-top">
+              <span class="tier-badge">ELITE COMMAND</span>
+              <h3>BlackCell Command Pass</h3>
+              <p class="tier-price">$99.99 <span class="price-note">/ Full Bundle</span></p>
+            </div>
+            <ul class="tier-features">
+              <li>Everything in Vault Tactical Edition</li>
+              <li>BlackCell Exclusive Animated Operator &amp; Tracers</li>
+              <li>25 Instant Battle Pass Tier Skips</li>
+              <li>10% Seasonal Battle Pass XP Boost</li>
+            </ul>
+            <a class="btn btn-secondary btn-full" href="#intel-briefing">Claim Command Pass</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="intel-briefing" class="section section-alt" aria-labelledby="intel-title">
+      <div class="container">
+        <div class="intel-box">
+          <div class="intel-copy">
+            <p class="eyebrow">ENCRYPTED DISPATCH</p>
+            <h2 id="intel-title">Join The Intel Briefing</h2>
+            <p>
+              Receive patch-note telemetry, weapon meta balancing alerts, and early beta access codes directly
+              to your inbox.
+            </p>
+          </div>
+
+          <form
+            id="form"
+            class="intel-form"
+            action="https://www.freecodecamp.com/email-submit"
+          >
+            <div class="field-group">
+              <label class="field-label" for="email">
+                Operator Email Address <span class="required-tag">(Required)</span>
+              </label>
+              <div class="form-row">
+                <input
+                  id="email"
+                  class="form-input"
+                  type="email"
+                  name="email"
+                  placeholder="operator@taskforce141.mil"
+                  autocomplete="email"
+                  inputmode="email"
+                  aria-describedby="email-hint"
+                  required
+                />
+                <input id="submit" class="btn btn-primary" type="submit" value="JOIN THE SQUAD" />
+              </div>
+              <p id="email-hint" class="field-hint">
+                Format: name@domain.com. Your typed address is preserved automatically if validation flags an error.
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">
+        Call of Duty: Warzone Tactical Showcase &mdash; Built with Pure Semantic HTML5 &amp; CSS3.
+      </p>
+      <nav class="footer-nav" aria-label="Footer Navigation">
+        <a href="#top">Back to Top</a>
+        <a href="#features">Arsenal</a>
+        <a href="#pricing">Deploy Tiers</a>
+        <a href="#intel-briefing">Intel Dispatch</a>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>
